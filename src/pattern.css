@@ -114,21 +114,21 @@
   .knowledge-row img { width: 100%; height: 220px; }
   .knowledge-row h3 { font-size: 1.45rem; }
   .knowledge-row p { font-size: .9rem; line-height: 1.6; }
-  .knowledge-intro h1 { font-size: 2.1rem; }
+  .knowledge-intro h1 { font-size: 1.6rem; line-height: 1.12; }
   .rehiyon-group { margin-bottom: 45px; }
-  .rehiyon-heading h2 { font-size: 1.7rem; }
+  .rehiyon-heading h2 { font-size: 1.6rem; line-height: 1.12; }
   .katutubo-heading { margin: 15px auto 35px; }
-  .katutubo-heading h2 { font-size: 1.8rem; }
+  .katutubo-heading h2 { font-size: 1.6rem; line-height: 1.12; }
   .habi-section { padding: 55px 6%; }
   .habi-heading { display: block; margin-bottom: 28px; }
-  .habi-heading h2 { font-size: 2rem; }
+  .habi-heading h2 { font-size: 1.6rem; line-height: 1.12; }
   .habi-heading label { display: block; margin-top: 22px; }
   .habi-grid { grid-template-columns: 1fr; }
   .habi-intro { padding-bottom: 28px; }
   .habi-intro h2 { font-size: 1.6rem; line-height: 1.12; }
   .habi-intro h3 { font-size: .92rem; line-height: 1.3; }
   .habi-intro > p:last-child { font-size: .8rem; line-height: 1.5; }
-  .tela-list-title { margin-bottom: 22px; font-size: 1.2rem; }
+  .tela-list-title { margin-bottom: 22px; font-size: 1.6rem; line-height: 1.12; }
   .tela-row { flex-direction: row; align-items: flex-start; gap: 12px; margin-bottom: 32px; }
   .tela-row.reverse { flex-direction: row-reverse; }
   .tela-row img { width: 32%; height: 128px; flex-shrink: 0; border-radius: 18px; }
@@ -143,7 +143,7 @@
   .page-controls button { min-width: 84px; padding: 8px 9px; font-size: .7rem; }
   .page-controls span { font-size: .72rem; }
   .tala-section { padding: 52px 6%; }
-  .tala-heading h2 { font-size: 1.45rem; line-height: 1.2; }
+  .tala-heading h2 { font-size: 1.6rem; line-height: 1.12; }
   .tala-list { grid-template-columns: 1fr; gap: 8px; }
   .tala-item { padding: 16px 0; }
   footer { padding: 18px 6%; font-size: .56rem; line-height: 1.35; }
@@ -164,13 +164,17 @@ img { max-width: 100%; }
   .navbar { padding: 7px 8px; gap: 4px; }
   .logo { font-size: .76rem; }
   nav a { padding: 3px 4px; font-size: .4rem; }
-  .habi-intro h2 { font-size: 1.42rem; }
-  .tela-list-title { font-size: 1.08rem; }
+  .knowledge-intro h1 { font-size: 1.42rem; line-height: 1.12; }
+  .rehiyon-heading h2 { font-size: 1.42rem; line-height: 1.12; }
+  .katutubo-heading h2 { font-size: 1.42rem; line-height: 1.12; }
+  .habi-heading h2 { font-size: 1.42rem; line-height: 1.12; }
+  .habi-intro h2 { font-size: 1.42rem; line-height: 1.12; }
+  .tela-list-title { font-size: 1.42rem; line-height: 1.12; }
   .tela-row img { width: 30%; height: 112px; }
   .tela-row h3 { font-size: .8rem; }
   .tela-row p { font-size: .58rem; }
   .habi-wakas h3 { font-size: 1rem; }
   .habi-wakas p, .habi-wakas blockquote { font-size: .68rem; }
-  .tala-heading h2 { font-size: 1.28rem; }
+  .tala-heading h2 { font-size: 1.42rem; line-height: 1.12; }
   footer { font-size: .5rem; }
 }
