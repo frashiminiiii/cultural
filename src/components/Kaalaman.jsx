@@ -127,7 +127,6 @@ function Grupo({ grupo }) {
             <div>
               <h3>{aytem.pamagat}</h3>
               <p><strong>Lokasyon:</strong> {aytem.lokasyon}</p>
-              <p><strong>Materyal:</strong> {aytem.materyal}</p>
               <p><strong>Disenyo:</strong> {aytem.disenyo}</p>
               <p><strong>Kahalagahan:</strong> {aytem.kahalagahan}</p>
             </div>
