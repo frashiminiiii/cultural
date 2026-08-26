@@ -11,25 +11,26 @@ import mabal from '../assets/Mabal.png'
 import saputangan from '../assets/Saputangan.png'
 
 const mgaTela = [
-  ['Pinilian', 'Ilocos', 'Ang mga geometrikong disenyo ay nagpapakita ng pagkamalikhain at tradisyon ng mga Ilokano.', 'Ginagamit sa paggawa ng tradisyonal na kasuotan, kumot, at iba pang tela.', pinilian],
-  ['Kalinga', 'Kalinga, Cordillera', 'Ang mga guhit at geometrikong disenyo ay nagpapakita ng pagkakakilanlan at kultura ng mga Kalinga.', 'Ginagamit sa tradisyonal na kasuotan at palamuti.', kalinga],
-  ['Piña', 'Aklan, Panay', 'Kilala sa pino at masalimuot na paghahabi, na nagpapakita ng mataas na kasanayan ng mga manghahabi.', 'Ginagamit sa Barong Tagalog, saya, panuelo, at iba pang pormal na kasuotan.', pina],
-  ['Hablon', 'Panay, lalo na sa Iloilo', 'Ang mga guhit at parisukat na disenyo ay nagpapakita ng tradisyunal na sining at pagkakakilanlan ng mga taga-Panay.', 'Ginagamit sa patadyong, panuelo, damit, at iba pang kasuotan.', hablon],
-  ['Bagobo Inabal', 'Davao del Sur, Mindanao', 'Ang mga disenyo ay sumasalamin sa kultura, kalikasan, at paniniwala ng mga Bagobo.', 'Ginagamit sa tradisyonal na kasuotan at seremonyal na tela.', bagobo],
-  ['Dagmay', 'Silangang Mindanao; mga Mandaya', 'Ang mga disenyo ay hango sa kalikasan, hayop, at mga paniniwala ng mga Mandaya.', 'Ginagamit sa tradisyonal na kasuotan, palamuti, at iba pang gamit.', dagmay],
-  ["T'nalak", "South Cotabato; mga T'boli", 'Ang mga disenyo ay may kaugnayan sa kalikasan, paniniwala, at kultura ng mga Tboli.', 'Ginagamit bilang tradisyonal na tela, kasuotan, at seremonyal na gamit.', tnalak],
-  ['Mabal Tabih', 'Sarangani at South Cotabato; mga Blaan', 'Ang paghahabi ay mahalagang bahagi ng kultura ng Blaan at iniuugnay sa kanilang paniniwala at espirituwalidad.', 'Tabih, ang tradisyunal na palda o telang pantubo ng mga Blaan.', mabal],
-  ['Saputangan', 'Basilan; mga Yakan', 'Kilala sa masalimuot at makukulay na disenyo na nagbibigay ng lalim at ilusyon sa pattern.', 'Isang parisukat na tradisyunal na tela na ginagamit sa iba\'t ibang kasuotang Yakan.', saputangan],
+  ['Pinilian', 'Ilocos', 'Bulak', 'Ang mga geometrikong disenyo ay nagpapakita ng pagkamalikhain at tradisyon ng mga Ilokano.', 'Ginagamit sa paggawa ng tradisyonal na kasuotan, kumot, at iba pang tela.', pinilian],
+  ['Kalinga', 'Kalinga, Cordillera', 'Bulak', 'Ang mga guhit at geometrikong disenyo ay nagpapakita ng pagkakakilanlan at kultura ng mga Kalinga.', 'Ginagamit sa tradisyonal na kasuotan at palamuti.', kalinga],
+  ['Piña', 'Aklan, Panay', 'Hibla ng dahon ng pinya', 'Kilala sa pino at masalimuot na paghahabi, na nagpapakita ng mataas na kasanayan ng mga manghahabi.', 'Ginagamit sa Barong Tagalog, saya, panuelo, at iba pang pormal na kasuotan.', pina],
+  ['Hablon', 'Panay, lalo na sa Iloilo', 'Bulak, abaka, at iba pang hibla', 'Ang mga guhit at parisukat na disenyo ay nagpapakita ng tradisyunal na sining at pagkakakilanlan ng mga taga-Panay.', 'Ginagamit sa patadyong, panuelo, damit, at iba pang kasuotan.', hablon],
+  ['Bagobo Inabal', 'Davao del Sur, Mindanao', 'Hibla ng abaka', 'Ang mga disenyo ay sumasalamin sa kultura, kalikasan, at paniniwala ng mga Bagobo.', 'Ginagamit sa tradisyonal na kasuotan at seremonyal na tela.', bagobo],
+  ['Dagmay', 'Silangang Mindanao; mga Mandaya', 'Hibla ng abaka at natural na tina', 'Ang mga disenyo ay hango sa kalikasan, hayop, at mga paniniwala ng mga Mandaya.', 'Ginagamit sa tradisyonal na kasuotan, palamuti, at iba pang gamit.', dagmay],
+  ["T'nalak", "South Cotabato; mga T'boli", 'Hibla ng abaka at natural na tina', 'Ang mga disenyo ay may kaugnayan sa kalikasan, paniniwala, at kultura ng mga Tboli.', 'Ginagamit bilang tradisyonal na tela, kasuotan, at seremonyal na gamit.', tnalak],
+  ['Mabal Tabih', 'Sarangani at South Cotabato; mga Blaan', 'Hibla na ginagamit sa paghahabi ng tradisyunal na tela', 'Ang paghahabi ay mahalagang bahagi ng kultura ng Blaan at iniuugnay sa kanilang paniniwala at espirituwalidad.', 'Tabih, ang tradisyunal na palda o telang pantubo ng mga Blaan.', mabal],
+  ['Saputangan', 'Basilan; mga Yakan', 'Mga hibla na hinahabi gamit ang iba\'t ibang teknik', 'Kilala sa masalimuot at makukulay na disenyo na nagbibigay ng lalim at ilusyon sa pattern.', 'Isang parisukat na tradisyunal na tela na ginagamit sa iba\'t ibang kasuotang Yakan.', saputangan],
 ]
 
 function TelaRow({ tela, index }) {
-  const [uri, pinagmulan, kahulugan, gamit, larawan] = tela
+  const [uri, pinagmulan, materyales, kahulugan, gamit, larawan] = tela
   return (
     <article className={`tela-row${index % 2 ? ' reverse' : ''}`}>
       <img src={larawan} alt={`Telang ${uri}`} loading="lazy" decoding="async" />
       <div>
         <p className="tela-origin">{pinagmulan}</p>
         <h3>{uri}</h3>
+        <p><strong>Materyales:</strong> {materyales}</p>
         <p><strong>Kahulugan ng disenyo:</strong> {kahulugan}</p>
         <p><strong>Gamit:</strong> {gamit}</p>
       </div>

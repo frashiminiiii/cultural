@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const mgaLink = [
   ['home', 'TAMPILAN'],
@@ -8,21 +8,34 @@ const mgaLink = [
 
 export default function Header() {
   const [aktibo, setAktibo] = useState('home')
+  const pinipilingSeksiyon = useRef(null)
 
   useEffect(() => {
     const mgaSeksiyon = mgaLink.map(([id]) => document.getElementById(id)).filter(Boolean)
-    const tagamasid = new IntersectionObserver(
-      (mgaEntry) => {
-        const nakikita = mgaEntry
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
-        if (nakikita) setAktibo(nakikita.target.id)
-      },
-      { rootMargin: '-20% 0px -55% 0px', threshold: [0.2, 0.4, 0.6] },
-    )
+    const ayusinAktibongSeksiyon = () => {
+      if (pinipilingSeksiyon.current) {
+        const target = document.getElementById(pinipilingSeksiyon.current)
+        const layoSaTarget = target?.getBoundingClientRect().top ?? 0
+        if (target && (layoSaTarget < -40 || layoSaTarget > 40)) return
+        pinipilingSeksiyon.current = null
+      }
 
-    mgaSeksiyon.forEach((seksiyon) => tagamasid.observe(seksiyon))
-    return () => tagamasid.disconnect()
+      const punto = window.scrollY + window.innerHeight * 0.35
+      const kasalukuyan = mgaSeksiyon.reduce((pinakamalapit, seksiyon) => {
+        if (seksiyon.offsetTop <= punto) return seksiyon
+        return pinakamalapit
+      }, mgaSeksiyon[0])
+
+      if (kasalukuyan) setAktibo(kasalukuyan.id)
+    }
+
+    ayusinAktibongSeksiyon()
+    window.addEventListener('scroll', ayusinAktibongSeksiyon, { passive: true })
+    window.addEventListener('resize', ayusinAktibongSeksiyon)
+    return () => {
+      window.removeEventListener('scroll', ayusinAktibongSeksiyon)
+      window.removeEventListener('resize', ayusinAktibongSeksiyon)
+    }
   }, [])
 
   return (
@@ -39,6 +52,7 @@ export default function Header() {
               href={`#${id}`}
               onClick={(event) => {
                 event.preventDefault()
+                pinipilingSeksiyon.current = id
                 setAktibo(id)
                 document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
               }}
