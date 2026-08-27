@@ -53,6 +53,7 @@
 .filipiniana-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 30px; }
 .filipiniana-card { padding: 22px 20px 24px; border: 2px solid #dbeafe; border-radius: 22px; background: #fff; box-shadow: 0 10px 24px #0f4c810e; }
 .filipiniana-card strong { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; margin-bottom: 14px; border-radius: 50%; background: var(--green); color: #fff; font: 700 1rem Fredoka, cursive; }
+.filipiniana-card > img { display: block; width: 100%; height: 180px; margin: 0 0 16px; object-fit: contain; filter: drop-shadow(0 10px 14px #0f4c8120); }
 .filipiniana-card h3 { margin: 0 0 12px; color: var(--blue); font: 600 1.45rem Fredoka, cursive; }
 .filipiniana-card p { margin: 0 0 10px; color: var(--muted); font-size: .92rem; font-weight: 600; line-height: 1.7; }
 .filipiniana-summary { max-width: 900px; margin: 0 auto 55px; padding: 24px 26px; border-radius: 24px; background: linear-gradient(180deg, #f8fafc, #ffffff); border: 2px solid #dbeafe; box-shadow: 0 10px 24px #0f4c810c; text-align: center; }
@@ -155,6 +156,7 @@
   .filipiniana-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 22px; }
   .filipiniana-card { padding: 18px 16px 20px; }
   .filipiniana-card strong { width: 34px; height: 34px; margin-bottom: 10px; font-size: .9rem; }
+  .filipiniana-card > img { height: 150px; margin-bottom: 12px; }
   .filipiniana-card h3 { font-size: 1.1rem; }
   .filipiniana-card p { font-size: .8rem; line-height: 1.55; }
   .filipiniana-summary { margin-bottom: 36px; padding: 18px 16px; }

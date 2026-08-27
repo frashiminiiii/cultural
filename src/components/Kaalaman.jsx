@@ -11,6 +11,10 @@ import dagmay from '../assets/Dagmay.png'
 import tnalak from '../assets/Tinalak.png'
 import malong from '../assets/Malong.png'
 import saputangan from '../assets/Saputangan.png'
+import baroSaya from '../assets/Barotsaya.png'
+import mariaClara from '../assets/Maria.png'
+import terno from '../assets/Terno.png'
+
 
 const mgaGrupo = [
   {
@@ -171,6 +175,7 @@ export default function Kaalaman() {
           <article className="filipiniana-card">
             <strong>1</strong>
             <h3>Baro’t Saya</h3>
+            <img src={baroSaya} alt="Baro’t Saya" loading="lazy" decoding="async" />
             <p>Ang Baro’t Saya ay kombinasyon ng blusa at palda na isa sa mga pinakaunang uri ng Filipiniana.</p>
             <p>Ang Baro ay maluwag at dumadaloy na blusa samantalang ang Saya ay mahabang palda.</p>
             <p>Isinuot ito ng mga kababaihan sa Pilipinas mula pa noong panahon bago dumating ang mga Kastila hanggang sa kolonyal na panahon, gamit ang telang piña o jusi.</p>
@@ -179,6 +184,7 @@ export default function Kaalaman() {
           <article className="filipiniana-card">
             <strong>2</strong>
             <h3>Maria Clara</h3>
+            <img src={mariaClara} alt="Maria Clara" loading="lazy" decoding="async" />
             <p>Tulad ng ipinangalan sa pangunahing tauhan sa nobelang Noli Me Tangere ni Rizal, ang kasuotan na ito ay hango rin sa impluwensyang Kastila at Baro’t Saya.</p>
             <p>Binubuo ang kasuotan ng vestido o buong palda, pañuelo na may burda, at patong na tapis.</p>
             <p>Ang Maria Clara ay kumakatawan sa isang mahinhin na dalagang Pilipina sa panahon ng Espanya, kaya’t madalas itong inilalarawan sa mga pagtatanghal sa teatro o tematikong pagdiriwang.</p>
@@ -186,6 +192,7 @@ export default function Kaalaman() {
           <article className="filipiniana-card">
             <strong>3</strong>
             <h3>Terno</h3>
+            <img src={terno} alt="Terno" loading="lazy" decoding="async" />
             <p>Noong unang bahagi ng 1900s, ang Terno ay naging pambansang simbolo ng moda dahil sa paru-parong manggas.</p>
             <p>Naging representasyon ito ng kulturang Pilipino matapos umunlad mula sa Maria Clara, na may mas masikip na hulma, mas malinis na linya, at makabagong silweta.</p>
             <p>Pinagsama ng mga taga-disenyo ang magkahiwalay na blusa at palda sa isang buo at walang putol na kasuotan; isang estilo na pinahusay ng tanyag na taga-disenyo na si Ramon Valera noong kalagitnaan ng ika-20 siglo.</p>
