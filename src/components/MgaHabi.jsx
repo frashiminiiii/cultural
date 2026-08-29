@@ -26,7 +26,7 @@ function TelaRow({ tela, index }) {
   const [uri, pinagmulan, materyales, kahulugan, gamit, larawan] = tela
   return (
     <article className={`tela-row${index % 2 ? ' reverse' : ''}`}>
-      <img src={larawan} alt={`Telang ${uri}`} loading="lazy" decoding="async" />
+      <img src={larawan} alt={`${uri}: Telang mula sa ${pinagmulan}`} loading="lazy" decoding="async" />
       <div>
         <p className="tela-origin">{pinagmulan}</p>
         <h3>{uri}</h3>

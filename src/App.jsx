@@ -11,7 +11,10 @@ function App() {
   return <>
     <Header />
     <main><Hero /><Kaalaman /><PamanangTala /><MgaHabi /></main>
-    <footer><p>© 2026 Pagtatanghal ng Kasuotang Pilipino | Inihanda para sa Araw ng Wika</p></footer>
+    <footer>
+      <p>© 2026 Pagtatanghal ng Kasuotang Pilipino | Inihanda para sa Araw ng Wika</p>
+      <p><small>Ipinagmamalaki nating ibahagi ang ating maikling koleksyon ng ating kultura at tradisyon.</small></p>
+    </footer>
   </>
 }
 

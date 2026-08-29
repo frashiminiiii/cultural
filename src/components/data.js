@@ -1,4 +1,4 @@
-import kultura from '../assets/kultura.png.png'
+import kultura from '../assets/kultura.png'
 
 export const larawan = {
   kultura,
